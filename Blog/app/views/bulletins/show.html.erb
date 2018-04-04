@@ -15,5 +15,10 @@
   <%= @bulletin.created_at %>
 </p>
 
+<p>
+  <strong>Post Type</strong>
+  <%= @bulletin.post_type.capitalize %>
+</p>
+
 <%= link_to 'Edit', edit_bulletin_path(@bulletin) %> |
 <%= link_to 'Back', bulletins_path %>
