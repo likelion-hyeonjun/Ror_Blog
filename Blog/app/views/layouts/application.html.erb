@@ -9,7 +9,6 @@
   </head>
 
   <body>
-  <body>
   <!-- Fixed navbar -->
   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -35,10 +34,10 @@
   </div>
 
   <div class="container">
-
+    <%= render partial: "shared/flash_messages", flash: flash %>
     <%= yield %>
 
   </div> <!-- /container -->
   </body>
-  </body>
+
 </html>
